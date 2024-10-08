@@ -1,5 +1,9 @@
 from typing import Any, List, Optional
 
+from wildlife_tracker.animal_management.animal import Animal
+from wildlife_tracker.migration_tracking.migration_path import MigrationPath
+from wildlife_tracker.migration_tracking.migration import Migration
+from wildlife_tracker.habitat_management.habitat import Habitat
 
 age: Optional[int] = None
 animal_id: int
@@ -115,9 +119,6 @@ def remove_habitat(habitat_id: int) -> None:
     pass
 
 def remove_migration_path(path_id: int) -> None:
-    pass
-
-def schedule_migration(migration_path: MigrationPath) -> None:
     pass
 
 def update_animal_details(animal_id: int, **kwargs: Any) -> None:
